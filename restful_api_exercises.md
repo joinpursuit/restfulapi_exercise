@@ -1,3 +1,4 @@
+//Jonathan Erquinigo.
 # RESTful API Practice
 
 Create a README (`.md`) file and paste all of the responses from the server for each request. Utilize the [JSON Placeholder API](https://jsonplaceholder.typicode.com/) for each request.
