@@ -1,4 +1,5 @@
-<!-- 1.  Send a `GET` request to the route `/users` to get the user with the `id` 7. -->
+1.  Send a `GET` request to the route `/users` to get the user with the `id` 7.
+
 [
     {
         "id": 7,
