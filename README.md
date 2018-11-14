@@ -53,63 +53,128 @@ https://jsonplaceholder.typicode.com/todos/146
 
 
 4.  Send a `POST` request to the route `/albums` to create an album with the `userId` 10 and the `title` "My Summer Vacation".
+https://jsonplaceholder.typicode.com/albums/
 
 ```js
 
-
+{
+    "userId": "10",
+    "title": "My Summer Vacation",
+    "id": 101
+}
 
 ```
 
 
 5.  Send a `DELETE` request to the route `/users` to delete the user with the `id` 4.
+https://jsonplaceholder.typicode.com/users/4
 
 ```js
 
-
+{}
 
 ```
 
 
 6.  Send a `PUT` request to the route `/todos` to change the `userId` of the Todo to 6 where the `id` of the Todo is 51.
+https://jsonplaceholder.typicode.com/todos/51
+
+used `PATCH`:
+```js
+
+{
+    "userId": "6",
+    "id": 51,
+    "title": "My Summer Vacation",
+    "completed": false
+}
+
+```
+
+used `PUT`:
+```js
+
+{
+    "userId": "6",
+    "title": "My Summer Vacation",
+    "id": 51
+}
+
+```
+
+
+7.  Send a `POST` request to the route `/pictures`  to add a picture of your choice with the `albumId` of 1.
+used `/photos` instead.
+https://jsonplaceholder.typicode.com/photos/
 
 ```js
 
+{
+    "albumId": "1",
+    "id": "10000",
+    "title": "acts of actions",
+    "url": "https://www.astro.cz/apod_data/2018/04/MilkyVlei_Liebermann_4000.jpg",
+    "thumbnailUrl": "https://www.astro.cz/apod_data/2018/04/MilkyVlei_Liebermann_4000.jpg"
+}
 
 
 ```
 
 
-7.  Send a `POST` request to the route `/pictures` to add a picture of your choice with the `albumId` of 1.
-
-```js
-
-
-
-```
 
 
 8.  Send a `GET` request to the route `/albums` to get the album with the `id` of 3.
+https://jsonplaceholder.typicode.com/albums/3
 
 ```js
 
-
+{
+    "userId": 1,
+    "id": 3,
+    "title": "omnis laborum odio"
+}
 
 ```
 
 
 9.  Send a `DELETE` request to the route `/posts` to delete the post with the `id` of 73.
+https://jsonplaceholder.typicode.com/posts/73
 
 ```js
 
-
+{}
 
 ```
 
 
 10. Send a `PUT` request to the route `/users` to create a user with the identity of your choice.
+https://jsonplaceholder.typicode.com/users/10
+used `PATCH` instead.
 
 ```js
 
-
+{
+    "id": 10,
+    "name": "Hans Frank",
+    "username": "Hanna",
+    "email": "hansfrank@aol.com",
+    "address": {
+        "street": "Kattie Turnpike",
+        "suite": "Suite 198",
+        "city": "Lebsackbury",
+        "zipcode": "31428-2261",
+        "geo": {
+            "lat": "-38.2386",
+            "lng": "57.2232"
+        }
+    },
+    "phone": "555-555-5550 ",
+    "website": "ambrose.net",
+    "company": {
+        "name": "Hoeger LLC",
+        "catchPhrase": "Centralized empowering task-force",
+        "bs": "target end-to-end models"
+    }
+}
 
 ```
