@@ -77,4 +77,4 @@
     "id": 11
 }
 
-//So I used Patch because I dont think put creates a user
+//So I used Post because I dont think put creates a user
