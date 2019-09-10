@@ -50,8 +50,8 @@ Separate requests by a long line of underscores.
 2. Find as much status codes as possible. I will tell you how many there are by the end.
 
 ### Bonuses
-1. Take a look at the next lesson. To learn how to make make network requests with Javascript
-Since you previously had build a simple Todos APP with HTML try to connect that app to this
-API so that todos you enter in the page are save to the API. Marking a todo as complete or uncompleted
-should work.
+1. Take a look at the next lesson to learn how to make make network requests with Javascript.
+Since you previously had build a simple Todos App with HTML and now you know how to manipulate
+the DOM, add some JS to try to connect that app to this API so that todos you enter in the page 
+are saved to the API. Marking a todo as complete or uncompleted should work.
 2. Find the easter egg.
