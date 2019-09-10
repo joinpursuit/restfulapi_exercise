@@ -26,7 +26,7 @@
 | `DELETE` | `/todos/<todo-id>` ||
 
 ## Tasks
-1. Try out all the requests that are possible with this API. For all the possible requests Create a list like the following.
+1. Try out all the requests that are possible with this API. For all the possible requests create a list like the following.
 Separate requests by a long line of underscores.
     * **Request**: METHOD - ENDPOINT
     * **Body** (if applicable POST/PUT/PATCH)
