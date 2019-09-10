@@ -15,20 +15,15 @@
 | `GET`  | `/users/<user-username>` |
 | `POST` | `/users/signup`          |
 
-
-* Fill in the blanks above :arrow_up: 
-
 #### Todos
 | Method   | Endpoint           | Possible Query Params |
 |----------|--------------------|-----------------------|
-| `GET`    | `/todos`           | `username=<username>`, `completed=\<true|false\>`
+| `GET`    | `/todos`           | `username=<username>`, `completed=<true\|false>`
 | `POST`   | `/todos`           ||
 | `GET`    | `/todos/<todo-id>` ||
 | `PUT`    | `/todos/<todo-id>` ||
 | `PATCH`  | `/todos/<todo-id>` ||
 | `DELETE` | `/todos/<todo-id>` ||
-
-* Fill in the blanks above :arrow_up: 
 
 ## Tasks
 1. Try out all the requests that are possible with this API. For all the possible requests Create a list like the following.
