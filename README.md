@@ -21,7 +21,7 @@
 #### Todos
 | Method   | Endpoint           | Possible Query Params |
 |----------|--------------------|-----------------------|
-| `GET`    | `/todos`           | `owner=<username>`, `completed=<true|false> `|
+| `GET`    | `/todos`           | `owner=<username>`, `completed=<true\|false> `|
 | `POST`   | `/todos`           ||
 | `GET`    | `/todos/<todo-id>` ||
 | `PUT`    | `/todos/<todo-id>` ||
