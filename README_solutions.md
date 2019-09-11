@@ -53,6 +53,12 @@ Separate requests by a long line of underscores.
     * **What does it do?**: EXPLAIN WHAT THE REQUEST DID/DO IN PLAIN ENGLISH
 
 2. Find as much status codes as possible. I will tell you how many there are by the end.
+200 Ok
+201 Created
+400 Bad Request
+401 This requires HTTP authentication
+404 Not Found
+405 Method Not Allowed
 
 ### Bonuses
 1. Take a look at the next lesson. To learn how to make make network requests with Javascript
