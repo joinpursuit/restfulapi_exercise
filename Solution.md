@@ -162,13 +162,11 @@ Separate requests by a long line of underscores.
     * **Response**:
     ```json
       {
-        {
         "payload": {
           "id": 19,
           "username": "A"
         },
         "err": false
-        }
       }
     ```
     * **What does it do?**: Gives the specified user with his/her id.
@@ -179,6 +177,7 @@ Separate requests by a long line of underscores.
     {
       completed:true
     }
+    ```
     * **Response**:
     ```json
     {

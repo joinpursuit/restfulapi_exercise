@@ -9,24 +9,24 @@
 ### Endpoints
 
 #### Users
-| Method | Endpoint           | What does this do? |
-|--------|--------------------|--------------------|
-| `GET`  | `/users`           | `_________________`|
-| `GET`  | `/users/<username>` | `_________________`|
-| `POST`  | `/users/signup`   | `_________________`|
+| Method | Endpoint           |
+|--------|--------------------|
+| `GET`  | `/users`           |
+| `GET`  | `/users/<username>` |
+| `POST`  | `/users/signup`   |
 
 
 * Fill in the blanks above :arrow_up: 
 
 #### Todos
-| Method   | Endpoint           | What does this do? | Possible Query Params |
-|----------|--------------------|--------------------|-----------------------|
-| `GET`    | `/todos`           | `_________________`| `owner=<username>`, `completed=<true|false> `
-| `POST`   | `/todos`           | `_________________`||
-| `GET`    | `/todos/<todo-id>` | `_________________`||
-| `PUT`    | `/todos/<todo-id>` | `_________________`||
-| `PATCH`  | `/todos/<todo-id>` | `_________________`||
-| `DELETE` | `/todos/<todo-id>` | `_________________`||
+| Method   | Endpoint           | Possible Query Params |
+|----------|--------------------|-----------------------|
+| `GET`    | `/todos`           | `owner=<username>`, `completed=<true|false> `
+| `POST`   | `/todos`           ||
+| `GET`    | `/todos/<todo-id>` ||
+| `PUT`    | `/todos/<todo-id>` ||
+| `PATCH`  | `/todos/<todo-id>` ||
+| `DELETE` | `/todos/<todo-id>` ||
 
 * Fill in the blanks above :arrow_up: 
 
