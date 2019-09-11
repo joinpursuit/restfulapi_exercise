@@ -10,23 +10,23 @@
 
 #### Users
 | Method | Endpoint           | What does this do? |
-|========|====================|====================|
-| `GET`  | `/users`           | `================_`|
-| `GET`  | `/users/<user-id>` | `================_`|
-| `POST`  | `/users/signup`   | `================_`|
+|--------|--------------------|--------------------|
+| `GET`  | `/users`           | `_________________`|
+| `GET`  | `/users/<username>` | `_________________`|
+| `POST`  | `/users/signup`   | `_________________`|
 
 
 * Fill in the blanks above :arrow_up: 
 
 #### Todos
 | Method   | Endpoint           | What does this do? | Possible Query Params |
-|==========|====================|====================|======================-|
-| `GET`    | `/todos`           | `================_`| `username=<username>`, `completed=<true|false> `
-| `POST`   | `/todos`           | `================_`||
-| `GET`    | `/todos/<todo-id>` | `================_`||
-| `PUT`    | `/todos/<todo-id>` | `================_`||
-| `PATCH`  | `/todos/<todo-id>` | `================_`||
-| `DELETE` | `/todos/<todo-id>` | `================_`||
+|----------|--------------------|--------------------|-----------------------|
+| `GET`    | `/todos`           | `_________________`| `owner=<username>`, `completed=<true|false> `
+| `POST`   | `/todos`           | `_________________`||
+| `GET`    | `/todos/<todo-id>` | `_________________`||
+| `PUT`    | `/todos/<todo-id>` | `_________________`||
+| `PATCH`  | `/todos/<todo-id>` | `_________________`||
+| `DELETE` | `/todos/<todo-id>` | `_________________`||
 
 * Fill in the blanks above :arrow_up: 
 
@@ -52,7 +52,7 @@ Separate requests by a long line of underscores.
     }
     ```
     * **What does it do?**: Creates a new user.
-    ========================================================================================
+=============================================================================== 
     * **Request**: GET - /users
     * **Body** (if applicable POST/PUT/PATCH)
     * **Response**:
@@ -156,7 +156,7 @@ Separate requests by a long line of underscores.
     }
     ```
     * **What does it do?**: Gives the list of all users (with their ids).
-============================================================================================
+=============================================================================== 
     * **Request**: GET - /users/A
     * **Body** (if applicable POST/PUT/PATCH)
     * **Response**:
@@ -172,7 +172,7 @@ Separate requests by a long line of underscores.
       }
     ```
     * **What does it do?**: Gives the specified user with his/her id.
-============================================================================================
+=============================================================================== 
     * **Request**: GET - /todos
     * **Body** (if applicable POST/PUT/PATCH)
     ```json
@@ -225,7 +225,7 @@ Separate requests by a long line of underscores.
     
     ```
     * **What does it do?**: Gives a list of all the todos stored in the server.
-============================================================================================
+=============================================================================== 
     * **Request**: POST - /todos
     * **Body** (if applicable POST/PUT/PATCH)
     ```json
@@ -247,7 +247,7 @@ Separate requests by a long line of underscores.
     }
     ```
     * **What does it do?**: Created a new todo under the user A
-============================================================================================
+=============================================================================== 
     * **Request**: GET - /todos/40e882e0
     * **Body** (if applicable POST/PUT/PATCH)
     * **Response**:
@@ -263,7 +263,7 @@ Separate requests by a long line of underscores.
     }
     ```
     * **What does it do?**: Gives the todo what the id was specified on the request
-============================================================================================
+=============================================================================== 
     * **Request**: PUT - /todos/40e882e0
     * **Body** (if applicable POST/PUT/PATCH)
     ```json
@@ -286,7 +286,7 @@ Separate requests by a long line of underscores.
     ```
     * **What does it do?**: Updates the todo which the id was on the request (
       all key/values must be inclued on the request)
-============================================================================================
+=============================================================================== 
     * **Request**: PATCH - /todos/40e882e0
     * **Body** (if applicable POST/PUT/PATCH)
     ```json
@@ -306,7 +306,7 @@ Separate requests by a long line of underscores.
     }
     ```
     * **What does it do?**: Updates the todo which the id was on the request with the key/value provided
-============================================================================================
+=============================================================================== 
     * **Request**: DELETE - /todos/40e882e0
     * **Body** (if applicable POST/PUT/PATCH)
     * **Response**:
@@ -322,7 +322,7 @@ Separate requests by a long line of underscores.
     }
     ```
     * **What does it do?**: Delete the todo which the id was on the request.
-============================================================================================   
+===============================================================================   
 2. Find as much status codes as possible. I will tell you how many there are by the end.
   * **201 created**: when creating a new user/todo
   * **200 OK**: for all other working requests
