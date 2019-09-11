@@ -12,7 +12,7 @@
 | Method | Endpoint           | What does this do? |
 |--------|--------------------|--------------------|
 | `GET`  | `/users`           | `_________________`|
-| `GET`  | `/users/<user-id>` | `_________________`|
+| `GET`  | `/users/<username>` | `_________________`|
 | `POST`  | `/users/signup`   | `_________________`|
 
 
@@ -21,7 +21,7 @@
 #### Todos
 | Method   | Endpoint           | What does this do? | Possible Query Params |
 |----------|--------------------|--------------------|-----------------------|
-| `GET`    | `/todos`           | `_________________`| `username=<username>`, `completed=<true|false> `
+| `GET`    | `/todos`           | `_________________`| `owner=<username>`, `completed=<true|false> `
 | `POST`   | `/todos`           | `_________________`||
 | `GET`    | `/todos/<todo-id>` | `_________________`||
 | `PUT`    | `/todos/<todo-id>` | `_________________`||
