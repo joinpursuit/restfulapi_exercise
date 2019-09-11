@@ -46,6 +46,8 @@ Separate requests by a long line of underscores.
     }
     ```
     * **What does it do?**: EXPLAIN WHAT THE REQUEST DID/DO IN PLAIN ENGLISH
+    1. Get - Prints the id for all the users.
+    Post-Delete - error
 
 2. Find as much status codes as possible. I will tell you how many there are by the end.
 
