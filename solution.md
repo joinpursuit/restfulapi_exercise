@@ -2,51 +2,22 @@
 
 ### Root https://fsw62-todos-api.herokuapp.com/api
 
-### Resources
-* users
-* todos
-
-### Endpoints
-
-#### Users
-| Method | Endpoint           | What does this do? |
-|--------|--------------------|--------------------|
-| `GET`  | `/users`           | `_________________`|
-| `GET`  | `/users/<user-id>` | `_________________`|
-| `POST`  | `/users/signup`   | `_________________`|
-
-
-* Fill in the blanks above :arrow_up: 
-
-#### Todos
-| Method   | Endpoint           | What does this do? | Possible Query Params |
-|----------|--------------------|--------------------|-----------------------|
-| `GET`    | `/todos`           | `_________________`| `username=<username>`, `completed=<true|false> `
-| `POST`   | `/todos`           | `_________________`||
-| `GET`    | `/todos/<todo-id>` | `_________________`||
-| `PUT`    | `/todos/<todo-id>` | `_________________`||
-| `PATCH`  | `/todos/<todo-id>` | `_________________`||
-| `DELETE` | `/todos/<todo-id>` | `_________________`||
-
-* Fill in the blanks above :arrow_up: 
-
-## Tasks
-1. Try out all the requests that are possible with this API. For all the possible requests Create a list like the following.
-Separate requests by a long line of underscores.
-    * **Request**: METHOD - ENDPOINT
+***1.Get===> users:**
+---------------------
+    ***Request: METHOD - ENDPOINT***
 ```json
     https://fsw62-todos-api.herokuapp.com/api/users
 ```
-    * **Body** 
+======================================
+    ***Body***
     
      ```json
-     No body
+     No body used
      ```
-
-    * **Response**:
+======================================
+    ***Response***
     
-
-     ```json
+```json
         {
             "id": 1,
             "username": "alejo4373"
@@ -55,24 +26,41 @@ Separate requests by a long line of underscores.
             "id": 2,
             "username": "JRJRocks"
         },
-    ```
-    * **What does it do?**: EXPLAIN WHAT THE REQUEST DID/DO IN PLAIN ENGLISH
+```
+======================================
+    ***What does it do?***
+
+```json
+
   GET requests simply return information stored at a specific endpoint. 
   it gives us the id's and the usernames
 
+```
+======================================
+***status codes***
 
-    ------------------------------------------------------
+```json
+status: 200 ok
+```
+--------------------------------------
+***2.Get ===> user-username:**
+-----------------------
 
-    ```json
-    Request:
+ ***Request: METHOD - ENDPOINT***
+
+```json
+
     https://fsw62-todos-api.herokuapp.com/api/users/alejo4373/
-      ```
+```
+
+======================================
       ***body***
-
-      No body
-
+```json
+No body needed
+```
+======================================
     ***response**:
-    ```json
+```json
     {
     "payload": {
         "id": 1,
@@ -81,13 +69,36 @@ Separate requests by a long line of underscores.
     "err": false
 }
 ```
+======================================
+    ***What does it do?***
 
+```json
+
+  GET requests simply return information stored at a specific endpoint. 
+  it gives us the id ,usernames and err of the user alejo4373 as we requested.
+
+```
+======================================
+***status codes***
+
+```json
+status: 200 ok
+```
 --------------------------------------
+***3.Post====>users/signup:**
+-----------------------------
+***Request: METHOD - ENDPOINT***
+```json
   https://fsw62-todos-api.herokuapp.com/api/users/signup/
-
+```
+======================================
 *** body**
-yes I use body
-x-wwwform-urlencoded
+
+* yes I use body because is Post method
+* x-wwwform-urlencoded
+* username: Sihame
+* text: Having Fun
+======================================
 ***response***
 
 {
@@ -100,19 +111,41 @@ x-wwwform-urlencoded
     },
     "err": false
 }
+--------------------------------------
+***What does it do?***
 
---------------------------------
+```json
+POST is used to send data to a server to create or update a resource.
+in our case we send data to a server. we create a new username and a text and their value
+```
+======================================
+***status codes***
+
+```json
+status: 201 created
+```
+***3.Post====>users/signup:**
+--------------------------------------
+
 ***Todos***
 
+***1.GET====>/todos:**
+-----------------------------
+***Request: METHOD - ENDPOINT***
 
 ```json
 https://fsw62-todos-api.herokuapp.com/api/todos
 ```
-***body**
-```json
-No body needed
-```
+======================================
+    ***Body***
+    
+     ```json
+     No body used
+     ```
+======================================
 ***Response***
+
+```json
 {
             "id": "ecf57050",
             "owner": "AnimalCrackerEater",
@@ -125,9 +158,74 @@ No body needed
             "text": "spread radical candor",
             "completed": false
         },
- ```
+```
+======================================
+    ***What does it do?***
 
+```json
+
+  GET  returns all users information stored at a todos endpoint. 
+  it gives us the id's, owners, texts, and completed values.
+
+```
+======================================
+***status codes***
+
+```json
+status: 200 ok
+
+```
+--------------------------------------
+***2.POST====>/todos:**
+-----------------------------
+***Request: METHOD - ENDPOINT***
+```json
  https://fsw62-todos-api.herokuapp.com/api/todos/
+```
+======================================
+*** body**
+
+* yes I use body because is Post method
+* x-wwwform-urlencoded
+* id: 4b0c7900
+* owner: Sihame
+* text: Having Fun
+* completed: false
+======================================
+***Response***
+
+```json
+{
+    "payload": {
+        "id": "4b0c7900",
+        "owner": "Sihame",
+        "text": "lol",
+        "completed": false
+    },
+    "err": false
+}
+```
+======================================
+***What does it do?***
+
+```json
+POST is used to update data to a resource.
+```
+======================================
+***status codes***
+
+```json
+status: 201 created
+```
+--------------------------------------
+***3.GET====>/todos/<todo-id>:**
+-----------------------------
+***Request: METHOD - ENDPOINT***
+```json
+ https://fsw62-todos-api.herokuapp.com/api/todos/4b0c7900
+```
+======================================
+***Response***
 
 {
     "payload": {
@@ -138,24 +236,37 @@ No body needed
     },
     "err": false
 }
+======================================
+***Body***
 
+```json
+  No body used
+```
+======================================
+    ***What does it do?***
 
+```json
+
+  GET  user id at t the endpoint to get information stored at a todos endpoint. 
+  it gives us the id's, owners, texts, and completed values for the specific id information that we requested.
+
+```
+======================================
+***status codes***
+
+```json
+status: 200 ok
+
+```
+--------------------------------------
+***4.PUT====>/todos/<todo-id>:**
+-----------------------------
+***Request: METHOD - ENDPOINT***
+```json
  https://fsw62-todos-api.herokuapp.com/api/todos/4b0c7900
-
-{
-    "payload": {
-        "id": "4b0c7900",
-        "owner": "Sihame",
-        "text": "lol",
-        "completed": false
-    },
-    "err": false
-}
-
-
-
- https://fsw62-todos-api.herokuapp.com/api/todos/4b0c7900
-
+ ```
+======================================
+***Response***
 
 {
     "payload": {
@@ -166,9 +277,42 @@ No body needed
     },
     "err": false
 }
+======================================
+***Body***
 
+```json
+  yes with put we have to use body
+  x-wwwform-urlencoded
+* id: 4b0c7900
+* owner: Sihame
+* text: lol
+* completed: it was false and i update it to true
+
+```
+======================================
+    ***What does it do?***
+
+```json
+
+  Put  user id at the endpoint to update all information for a specific ID
+
+```
+======================================
+***status codes***
+
+```json
+status: 200ok
+
+```
+======================================
+***5.Patch====>/todos/<todo-id>:**
+--------------------------------
+***Request: METHOD - ENDPOINT***
+```json
  https://fsw62-todos-api.herokuapp.com/api/todos/4b0c7900
-
+ ```
+======================================
+***Response***
 {
     "payload": {
         "id": "4b0c7900",
@@ -178,25 +322,72 @@ No body needed
     },
     "err": false
 }
+======================================
+***Body***
 
+```json
+  yes with put we have to use body
+  x-wwwform-urlencoded
+* text: lab
 
+```
+======================================
+    ***What does it do?***
+
+```json
+
+  PATCH  user id at the endpoint to update partial information for a specific ID
+
+```
+======================================
+***status codes***
+
+```json
+status: 200ok
+
+```
+======================================
+***6.DELETE  ====>/todos/<todo-id>:**
+--------------------------------
+***Request: METHOD - ENDPOINT***
+```json
  https://fsw62-todos-api.herokuapp.com/api/todos/4b0c7900
+```
+======================================
+***Response***
 
 {
     "payload": {
-        "id": "4b0c7900",
-        "owner": "Sihame",
-        "text": "lab",
-        "completed": true
+        "msg": "Todo not found"
     },
-    "err": false
+    "err": true
 }
+======================================
+***Body***
+
+```json
+No we don't need body
+
+```
+======================================
+
+    ***What does it do?***
+
+```json
+
+  it delete user with ID
+
+```
+======================================
+***status codes***
+
+```json
+status: 404ok
+
+```
+======================================
 
 2. Find as much status codes as possible. I will tell you how many there are by the end.
+we have 3 status codes:
+200 ok,201 created, and 404 not found, 
 
-### Bonuses
-1. Take a look at the next lesson. To learn how to make make network requests with Javascript
-Since you previously had build a simple Todos APP with HTML try to connect that app to this
-API so that todos you enter in the page are save to the API. Marking a todo as complete or uncompleted
-should work.
-2. Find the easter egg.
