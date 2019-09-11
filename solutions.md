@@ -220,7 +220,11 @@ ________________________________________________________________________________
 **What does it do?**: Deletes a post with the id number that was provided.
 
 2. Find as much status codes as possible. I will tell you how many there are by the end.
-
+"200" - "OK"
+"201" - "created"
+"403" - "forbidden"
+"404" - "Not found"
+"405" - "Nah, nah nah"
 
 ### Bonuses
 1. Take a look at the next lesson. To learn how to make make network requests with Javascript
