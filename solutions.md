@@ -339,6 +339,8 @@ Separate requests by a long line of underscores.
 
 2. Find as much status codes as possible. I will tell you how many there are by the end.
 ```
+  (6)
+
   200 OK
   GET - https://fsw62-todos-api.herokuapp.com/api/todos?owner=the real not alejo4373
 
@@ -346,6 +348,9 @@ Separate requests by a long line of underscores.
   POST - https://fsw62-todos-api.herokuapp.com/api/users/signup
   "username": "test3"
   => "msg": "User created"
+
+  400 Bad Request
+  VIEW  https://fsw62-todos-api.herokuapp.com/api/users
 
   404 Not Found
   DELETE - https://fsw62-todos-api.herokuapp.com/api/users/"not alejo4373"
