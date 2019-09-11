@@ -12,7 +12,7 @@
 | Method | Endpoint           | What does this do? |
 |--------|--------------------|--------------------|
 | `GET`  | `/users`           | `_________________`|
-| `GET`  | `/users/<user-id>` | `_________________`|
+| `GET`  | `/users/<user-username>` | `_________________`|
 | `POST`  | `/users/signup`   | `_________________`|
 
 
