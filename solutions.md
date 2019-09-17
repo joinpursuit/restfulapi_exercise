@@ -23,7 +23,7 @@
 #### Todos
 | Method   | Endpoint           | What does this do? | Possible Query Params |
 |----------|--------------------|--------------------|-----------------------|
-| `GET`    | `/todos`           | `returns list of all todos with a queried user`| `owner=<username>`, `completed=<true|false> `
+| `GET`    | `/todos`           | `returns list of all todos with a queried user`| `owner=<username>`, `completed=<true|false> `||
 | `POST`   | `/todos`           | `enables method to create todo task item`||
 | `GET`    | `/todos/<todo-id>` | `returns task item info`||
 | `PUT`    | `/todos/<todo-id>` | `enables method to update entire todo task item`||
@@ -354,6 +354,10 @@ Separate requests by a long line of underscores.
 
   404 Not Found
   DELETE - https://fsw62-todos-api.herokuapp.com/api/users/"not alejo4373"
+
+  405 Method Not Allowed
+  PUT - https://fsw62-todos-api.herokuapp.com/api/users/?owner=alejo4373
+  "username": "alejo4373"
 
   409 Conflict
   POST - https://fsw62-todos-api.herokuapp.com/api/users/signup
