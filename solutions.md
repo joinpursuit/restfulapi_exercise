@@ -1,61 +1,65 @@
-### Joseph P. Pasaoa
-***
+###### _Completed. Joseph P. Pasaoa_
+
 # Todos API
+**root:** https://fsw62-todos-api.herokuapp.com/api
 
-### Root https://fsw62-todos-api.herokuapp.com/api
 
-### Resources
+## Resources
 * users
 * todos
 
-### Endpoints
+## Endpoints
 
 #### Users
 | Method | Endpoint           | What does this do? |
 |--------|--------------------|--------------------|
-| `GET`  | `/users`           | `returns list of all user objects`|
-| `GET`  | `/users/<user-id>` | `returns individual user object`|
-| `POST`  | `/users/signup`   | `enables method to create user object`|
+| `GET`  | `/users`           | returns list of all user objects|
+| `GET`  | `/users/<username>`| returns individual user object|
+| `POST`  | `/users/signup`   | enables method to create user object|
 
 
-* Fill in the blanks above :arrow_up: 
+_Fill in the blanks above_ :arrow_up: 
 
 #### Todos
-| Method   | Endpoint           | What does this do? | Possible Query Params |
+| Method   | Endpoint           | Possible Query Params| What does this do?  |
 |----------|--------------------|--------------------|-----------------------|
-| `GET`    | `/todos`           | `returns list of all todos with a queried user`| `owner=<username>`, `completed=<true|false> `||
-| `POST`   | `/todos`           | `enables method to create todo task item`||
-| `GET`    | `/todos/<todo-id>` | `returns task item info`||
-| `PUT`    | `/todos/<todo-id>` | `enables method to update entire todo task item`||
-| `PATCH`  | `/todos/<todo-id>` | `enables method to partially update todo task item`||
-| `DELETE` | `/todos/<todo-id>` | `removes specified todo task item from system`||
+| `GET`    | `/todos`           | `owner=<username>`, `completed=<true/false>` | returns list of all todos with a queried user|
+| `POST`   | `/todos`           || enables method to create todo task item|
+| `GET`    | `/todos/<todo.id>` || returns task item info|
+| `PUT`    | `/todos/<todo.id>` || enables method to update entire todo task item|
+| `PATCH`  | `/todos/<todo.id>` || enables method to partially update todo task item|
+| `DELETE` | `/todos/<todo.id>` || removes specified todo task item from system|
 
-* Fill in the blanks above :arrow_up: 
+_Fill in the blanks above_ :arrow_up: 
 
-## Tasks
-1. Try out all the requests that are possible with this API. For all the possible requests Create a list like the following.
+***
+
+## Task ONE
+Try out all the requests that are possible with this API. For all the possible requests Create a list like the following.
 Separate requests by a long line of underscores.
-    * **Request**: METHOD - ENDPOINT
-    * **Body** (if applicable POST/PUT/PATCH)
-    ```json
-      {
-        "owner": "alejo4373",
-        "text": "1st Todo"
-      }
-    ```
-    * **Response**:
-    ```json
-    {
-      "userId": 1,
-      "id": 1,
-      "title": "delectus aut autem",
-      "completed": false
-    }
-    ```
-    * **What does it do?**: EXPLAIN WHAT THE REQUEST DID/DO IN PLAIN ENGLISH
+
+> **SAMPLE**
+>    * **Request**: METHOD - ENDPOINT
+>    * **Body** (if applicable POST/PUT/PATCH)
+>    ```json
+>      {
+>        "owner": "alejo4373",
+>        "text": "1st Todo"
+>      }
+>    ```
+>    * **Response**:
+>    ```json
+>    {
+>      "userId": 1,
+>      "id": 1,
+>      "title": "delectus aut autem",
+>      "completed": false
+>    }
+>    ```
+>    * **What does it do?**: EXPLAIN WHAT THE REQUEST DID/DO IN PLAIN ENGLISH
 ---
 ---
-**Request**: GET - /users
+### 1. **Request**: GET - /users
 
 **Body**: (n/a)
 
@@ -83,7 +87,7 @@ Separate requests by a long line of underscores.
 **What does it do?**: Returns a listing of all the user objects in the system
 
 ---
-**Request**: GET - /users/\<user-id>
+### 2. **Request**: GET - /users/\<username>
 
 **Body**: (n/a)
 
@@ -98,7 +102,7 @@ Separate requests by a long line of underscores.
 **What does it do?**: Returns a single specified user object
 
 ---
-**Request**: POST - /users/signup
+### 3. **Request**: POST - /users/signup
 
 **Body**:
 
@@ -121,7 +125,7 @@ Separate requests by a long line of underscores.
 **What does it do?**: Creates a new user object
 
 ---
-**Request**: GET - /todos
+### 4. **Request**: GET - /todos
 
 **Body**: (n/a)
 
@@ -152,7 +156,7 @@ Separate requests by a long line of underscores.
 **What does it do?**: Gives back an array of all the todo tasks in the system
 
 ---
-**Request**: GET - /todos?owner=the real not alejo4373
+### 5. **Request**: GET - /todos?owner=the real not alejo4373
 
 **Body**: (n/a)
 
@@ -195,7 +199,7 @@ Separate requests by a long line of underscores.
 **What does it do?**: Gives back an array of all the todo tasks owned by specified user
 
 ---
-**Request**: GET - /todos?owner=the real not alejo4373&completed=true
+### 6. **Request**: GET - /todos?owner=the real not alejo4373&completed=true
 
 **Body**: (n/a)
 
@@ -214,7 +218,7 @@ Separate requests by a long line of underscores.
 **What does it do?**: Gives back an array of all todo tasks satisfying all queries, here specified owner and if completed
 
 ---
-**Request**: POST - /todos
+### 7. **Request**: POST - /todos
 
 **Body**:
 
@@ -237,7 +241,7 @@ Separate requests by a long line of underscores.
 **What does it do?**: Creates new todo task with posted data entered
 
 ---
-**Request**: GET - /todos/188b0300
+### 8. **Request**: GET - /todos/188b0300
 
 **Body**: (n/a)
 
@@ -254,7 +258,7 @@ Separate requests by a long line of underscores.
 **What does it do?**: Fetches single specified todo task
 
 ---
-**Request**: PUT - /todos/fd3a5dd0
+### 9. **Request**: PUT - /todos/fd3a5dd0
 
 **Body**:
 
@@ -278,7 +282,7 @@ Separate requests by a long line of underscores.
 **What does it do?**: Updates entire todo task item accordingly
 
 ---
-**Request**: PATCH - /todos/7b453650
+### 10. **Request**: PATCH - /todos/7b453650
 
 **Body**:
 
@@ -297,10 +301,10 @@ Separate requests by a long line of underscores.
   "completed": true
 }
 ```
-**What does it do?**: EXPLAIN WHAT THE REQUEST DID/DO IN PLAIN ENGLISH
+**What does it do?**: Updates partially a todo task item
 
 ---
-**Request**: DELETE - /todos/8f641390
+### 11. **Request**: DELETE - /todos/8f641390
 
 **Body**: (n/a)
 
@@ -317,7 +321,7 @@ Separate requests by a long line of underscores.
 **What does it do?**: Removes the specified todo task from the system
 
 ---
-
+<!---
 **Request**: METHOD - ENDPOINT
 
 **Body** (if applicable POST/PUT/PATCH)
@@ -333,48 +337,69 @@ Separate requests by a long line of underscores.
 }
 ```
 **What does it do?**: EXPLAIN WHAT THE REQUEST DID/DO IN PLAIN ENGLISH
-
+--->
 ---
 
 
-2. Find as much status codes as possible. I will tell you how many there are by the end.
+## TASK TWO
+
+Find as much status codes as possible. I will tell you how many there are by the end.
+
+#### **_6 FOUND_**
+
+**_200 OK_**
 ```
-  (6)
-
-  200 OK
-  GET - https://fsw62-todos-api.herokuapp.com/api/todos?owner=the real not alejo4373
-
-  201 Created
-  POST - https://fsw62-todos-api.herokuapp.com/api/users/signup
-  "username": "test3"
-  => "msg": "User created"
-
-  400 Bad Request
-  VIEW  https://fsw62-todos-api.herokuapp.com/api/users
-
-  404 Not Found
-  DELETE - https://fsw62-todos-api.herokuapp.com/api/users/"not alejo4373"
-
-  405 Method Not Allowed
-  PUT - https://fsw62-todos-api.herokuapp.com/api/users/?owner=alejo4373
-  "username": "alejo4373"
-
-  409 Conflict
-  POST - https://fsw62-todos-api.herokuapp.com/api/users/signup
-  "username": "test"
-  => "msg": "Username not available. Please try a different one."
-
-  500 Internal Server Error
-  PATCH - https://fsw62-todos-api.herokuapp.com/api/todos/7b453650
-  "comple": true
-  => "errStack": "Error: Cannot generate an UPDATE without any columns. [. . .]"
-
+GET - https://fsw62-todos-api.herokuapp.com/api/todos?owner=the real not alejo4373
 ```
 
+**_201 Created_**
+```
+POST - https://fsw62-todos-api.herokuapp.com/api/users/signup
+{ "username": "test3" }
 
-### Bonuses
+=> { "msg": "User created" }
+```
+
+**_400 Bad Request_**
+```
+VIEW - https://fsw62-todos-api.herokuapp.com/api/users
+```
+
+**_404 Not Found_**
+```
+DELETE - https://fsw62-todos-api.herokuapp.com/api/users/"not alejo4373"
+```
+
+**_409 Conflict_**
+```
+POST - https://fsw62-todos-api.herokuapp.com/api/users/signup
+{ "username": "test" }
+
+=> { "msg": "Username not available. Please try a different one." }
+```
+
+**_500 Internal Server Error_**
+```
+PATCH - https://fsw62-todos-api.herokuapp.com/api/todos/7b453650
+{ "comple": true }
+
+=> { "errStack": "Error: Cannot generate an UPDATE without any columns. [. . .] }"
+```
+
+***
+***
+
+## BONUSES
 1. Take a look at the next lesson. To learn how to make make network requests with Javascript
 Since you previously had build a simple Todos APP with HTML try to connect that app to this
 API so that todos you enter in the page are save to the API. Marking a todo as complete or uncompleted
 should work.
 2. Find the easter egg.
+
+#### **_FOUND: Sept 15, 2019 3:33PM_**
+```
+POST - https://fsw62-todos-api.herokuapp.com/6
+{ "username": "the real not alejo4373" }
+```
+
+![Proof Screencap](./Screen-Shot-2019-09-15-at-3.33.29-PM.png)
