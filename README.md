@@ -1,6 +1,13 @@
-# Todos API
+# Interacting with APIs - Exercises 
 
-### Root https://fsw62-todos-api.herokuapp.com/api
+In this exercises you will be retrieving information to an API as well as adding information for the API to save. By doing this exercises you will practice and reinforce.
+* HTTP Methods
+* The use of URL Query Parameters to filter results
+* Making network requests with Postman or `curl`
+* Learn about HTTP status codes
+
+##  Todos API
+### Root Endpoint https://fsw62-todos-api.herokuapp.com/api
 
 ### Resources
 * users
