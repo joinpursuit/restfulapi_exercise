@@ -16,21 +16,25 @@ In this exercises you will be retrieving information to an API as well as adding
 ### Endpoints
 
 #### Users
-| Method | Endpoint                 | 
-|--------|--------------------------|
-| `GET`  | `/users`                 |
-| `GET`  | `/users/<user-username>` |
-| `POST` | `/users/signup`          |
+| Method | Endpoint            |
+| ------ | ------------------- |
+| `GET`  | `/users`            |
+| `GET`  | `/users/<username>` |
+| `POST` | `/users/signup`     |
 
 #### Todos
-| Method   | Endpoint           | Possible Query Params |
-|----------|--------------------|-----------------------|
-| `GET`    | `/todos`           | `username=<username>`, `completed=<true\|false>`
-| `POST`   | `/todos`           ||
-| `GET`    | `/todos/<todo-id>` ||
-| `PUT`    | `/todos/<todo-id>` ||
-| `PATCH`  | `/todos/<todo-id>` ||
-| `DELETE` | `/todos/<todo-id>` ||
+| Method   | Endpoint           | Possible Query Params   |
+| -------- | ------------------ | ----------------------- |
+| `GET`    | `/todos`           | `username`, `completed` |
+| `POST`   | `/todos`           |                         |
+| `GET`    | `/todos/<todo-id>` |                         |
+| `PUT`    | `/todos/<todo-id>` |                         |
+| `PATCH`  | `/todos/<todo-id>` |                         |
+| `DELETE` | `/todos/<todo-id>` |                         |
+
+##### Query Params Values
+* `username`: A username that exists in the API that todos are associated with.
+* `completed`: A boolean `true` or `false` specifying whether the todos that are returned have been completed or not.
 
 ## Tasks
 1. Try out all the requests that are possible with this API. For all the possible requests create a list like the following.
