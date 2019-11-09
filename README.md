@@ -35,7 +35,10 @@ In this exercises you will be retrieving information to an API as well as adding
 ##### Query Params Values
 * `username`: A username that exists in the API that todos are associated with.
 * `completed`: A boolean `true` or `false` specifying whether the todos that are returned have been completed or not.
-
+* Example: Get all the todos belonging to max that are completed
+```
+GET /todos?username=max&completed=true
+```
 ## Tasks
 1. Try out all the requests that are possible with this API. For all the possible requests create a list like the following.
 Separate requests by a long line of underscores.
