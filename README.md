@@ -6,6 +6,8 @@ In this exercises you will be retrieving information to an API as well as adding
 * Making network requests with Postman or `curl`
 * Learn about HTTP status codes
 
+[Instructors make sure the API is deployed prior to the exercise.](https://github.com/joinpursuit/PCW62-Todos-API)
+
 ##  Todos API
 ### Root Endpoint https://fsw62-todos-api.herokuapp.com/api
 
